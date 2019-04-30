@@ -1,0 +1,25 @@
+export EDITOR=/usr/bin/vim
+export PATH=/usr/local/bin:$PATH
+
+alias cat='bat'
+alias man='tldr'
+
+alias l='exa -lhgb --group-directories-first' 
+alias ll='exa -lhgba -I=".DS_Store|.git" --group-directories-first' 
+
+alias gs='git status' 
+alias ga='git add -A'
+alias gc='git commit -m' 
+alias gp='git push origin'
+alias gb='git checkout -b'
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+source ~/oberd.sh
