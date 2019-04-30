@@ -20,15 +20,15 @@ Scripts and playbooks for setting up local dev environment on Unix systems (Ubun
 
 # Tasks
 ----
-Download all repos
-Setup bash aliases and such
-Make git rsa keys
-App secrets and such
+ * Download all repos
+ * Setup bash aliases and such
+ * Make git rsa keys
+ * App secrets and such
 
 # Maybes
 ----
-Desktop configs
-Virtual hosts
-`/etc/hosts`
-Remove un-needed stuff
-`/home` backup
+ * Desktop configs
+ * Virtual hosts
+ * `/etc/hosts`
+ * Remove un-needed packages,configs, startup stuff
+ * `/home` backup
