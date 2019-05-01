@@ -3,15 +3,15 @@ Scripts and playbooks for setting up local dev environment on Unix systems (Ubun
 
 | Package Name | Apt | Brew | Snap | Flatpak | Cargo |
 |--------------|-----|------|------|---------|-------|
-| Docker       |❌   |✅    |✅   |❌       |✅     |
-| Gedit        |❌   |✅    |✅   |✅       |❌     |
+| Docker       |✅   |✅    |✅   |❌       |✅     |
+| Gedit        |✅   |✅    |✅   |✅       |❌     |
 | Chrome       |❌   |❌    |❌   |❌       |❌     |
-| Vim          |❌   |❌    |❌   |✅       |❌     |
-| Git          |❌   |✅    |❌   |❌       |✅     |
+| Vim          |✅   |❌    |❌   |✅       |❌     |
+| Git          |✅   |✅    |❌   |❌       |✅     |
 | Slack        |❌   |❌    |✅   |✅       |✅     |
-| TLDR         |❌   |✅    |✅   |❌       |✅     |
-| Php          |❌   |✅    |❌   |❌       |✅     |
-| Node         |❌   |✅    |❌   |❌       |✅     |
+| TLDR         |✅   |✅    |✅   |❌       |✅     |
+| Php          |✅   |✅    |❌   |❌       |✅     |
+| Node         |✅   |✅    |❌   |❌       |✅     |
 | Spotify      |❌   |❌    |✅   |✅       |✅     |
 | IntelliJ     |❌   |❌    |✅   |✅       |❌     |
 | PhpStorm     |❌   |❌    |✅   |❌       |❌     |
