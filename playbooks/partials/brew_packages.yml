@@ -1,0 +1,17 @@
+---
+- name: Install Apt Packages
+  package:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+    - node
+    - macvim
+    - slack
+    - npm
+    - exa
+    - bat
+# May be able to do after installing a cask?
+#    - spotify
+#    - phpstorm
+#    - intellij-idea-ultimate

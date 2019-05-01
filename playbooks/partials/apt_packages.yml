@@ -1,0 +1,9 @@
+---
+- name: Install Apt Packages
+  package:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - nodejs
+      - vim

@@ -15,6 +15,12 @@ Scripts and playbooks for setting up local dev environment on Unix systems (Ubun
 | Spotify      |❌   |❌    |✅   |✅       |✅     |
 | IntelliJ     |❌   |❌    |✅   |✅       |❌     |
 | PhpStorm     |❌   |❌    |✅   |❌       |❌     |
+| NPM          |✅   |❌    |❌   |❌       |N/A     |
+| NVM          |❌   |✅    |❌   |❌       |N/A     |
+| Cmake        |✅   |✅    |❌   |❌       |N/A     |
+| Snap         |✅   |❌    |N/A   |❌       |❌     |
+| Flatpak      |✅   |❌    |❌   |N/A       |❌     |
+| Cargo        |✅   |❌    |❌   |❌       |N/A     |
 | Bat          |❌   |✅    |❌   |❌       |✅     |
 | Exa          |❌   |✅    |❌   |❌       |✅     |
 

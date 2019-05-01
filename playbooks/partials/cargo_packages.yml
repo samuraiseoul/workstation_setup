@@ -1,0 +1,18 @@
+---
+- name: Install Cargo
+  package:
+    name: "cargo"
+    state: present
+
+- name: Install CMake
+  package:
+    name: "cmake"
+    state: present
+
+# Loop with conditional doesn't work well, cargo is silly and fails if the package is already installed -_-
+
+#- name: Install Cargo Packages
+#  raw: test -z $(which {{ item }}) && cargo install {{ item }}
+#  loop:
+#    - exa
+#    - bat
