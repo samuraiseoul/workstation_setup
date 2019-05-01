@@ -4,3 +4,4 @@ git config --global user.email ${EMAIL}
 git config --global user.name ${NAME}
 git config --global user.username ${USERNAME}
 git config --global core.editor ${EDITOR}
+git config commit.gpgsign true
