@@ -11,8 +11,8 @@
 
 # Loop with conditional doesn't work well, cargo is silly and fails if the package is already installed -_-
 
-#- name: Install Cargo Packages
-#  raw: test -z $(which {{ item }}) && cargo install {{ item }}
-#  loop:
-#    - exa
-#    - bat
+- name: Install Cargo Packages
+  shell: test -z $(which {{ item }}) && cargo install {{ item }} || true
+  loop:
+    - exa
+    - bat
