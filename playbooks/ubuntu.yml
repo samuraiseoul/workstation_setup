@@ -8,4 +8,9 @@
     - import_tasks: ./partials/apt_packages.yml
     - import_tasks: ./partials/snap_packages.yml
     - import_tasks: ./partials/cargo_packages.yml
-# Install Chrome
+    - import_tasks: ./partials/bash_update.yml
+
+    - name: Install Chrome(Assumes on Ubuntu Budgie)
+      package:
+        name: "google-chrome-stable"
+        state: present

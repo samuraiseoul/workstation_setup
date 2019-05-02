@@ -4,6 +4,13 @@
     name: "snapd"
     state: present
 
+- name: Get SquashFuse
+  apt:
+    deb: "{{ item }}"
+  loop:
+    - http://ftp.us.debian.org/debian/pool/main/s/squashfuse/libsquashfuse0_0.1.103-1_amd64.deb
+    - http://ftp.us.debian.org/debian/pool/main/s/squashfuse/squashfuse_0.1.103-1_amd64.deb
+
 - name: Install Snap Packages
   command: snap install {{ item }} --classic
   loop:

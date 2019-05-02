@@ -1,0 +1,15 @@
+---
+- name: Copy Bash Folder
+  become: false
+  copy:
+    src: ../bash/
+    dest: "{{ lookup('env','HOME') }}/.bash"
+
+- name: Add source to .bashrc
+  blockinfile:
+    create: true
+    marker_begin: "# ANISBLE .bashrc START"
+    marker_end: "# ANISBLE .bashrc END"
+    path: "{{ lookup('env','HOME') }}/.bashrc"
+    block: |
+      source .bash/bash_include.sh

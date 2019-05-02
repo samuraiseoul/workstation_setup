@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  connection: local
+  become: yes
+
+  tasks:
+    - import_tasks: ./partials/universal_packages.yml
+    - import_tasks: ./partials/apt_packages.yml
+    - import_tasks: ./partials/snap_packages.yml
+    - import_tasks: ./partials/cargo_packages.yml
+    - import_tasks: ./partials/bash_update.yml
