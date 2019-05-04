@@ -1,13 +1,20 @@
 ---
 - name: Install Cargo
-  package:
-    name: "cargo"
-    state: present
+  shell: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 - name: Install CMake
   package:
     name: "cmake"
     state: present
+
+- name: Install OpenSSL Packages
+  package:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - libssl-dev
+      - pkg-config
 
 # Loop with conditional doesn't work well, cargo is silly and fails if the package is already installed -_-
 
@@ -17,3 +24,6 @@
     - exa
     - bat
     - tealdeer
+
+- name: Update TLDR
+  shell: tldr --update
