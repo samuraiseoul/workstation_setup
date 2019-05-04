@@ -13,6 +13,6 @@
 
 - name: Install Cargo Packages
   shell: test -z $(which {{ item }}) && cargo install {{ item }} || true
-  loop:
+  with_list:
     - exa
     - bat

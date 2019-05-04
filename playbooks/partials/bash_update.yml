@@ -8,8 +8,7 @@
 - name: Add source to .bashrc
   blockinfile:
     create: true
-    marker_begin: "# ANISBLE .bashrc START"
-    marker_end: "# ANISBLE .bashrc END"
-    path: "{{ lookup('env','HOME') }}/.bashrc"
+    marker: "# ANISBLE .bashrc INCLUDE"
+    name: "{{ lookup('env','HOME') }}/.bashrc"
     block: |
       source .bash/bash_include.sh

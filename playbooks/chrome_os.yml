@@ -4,8 +4,8 @@
   become: yes
 
   tasks:
-    - import_tasks: ./partials/universal_packages.yml
-    - import_tasks: ./partials/apt_packages.yml
-    - import_tasks: ./partials/snap_packages.yml
-    - import_tasks: ./partials/cargo_packages.yml
-    - import_tasks: ./partials/bash_update.yml
+    - include: ./partials/universal_packages.yml
+    - include: ./partials/apt_packages.yml
+    - include: ./partials/snap_packages.yml
+    - include: ./partials/cargo_packages.yml
+    - include: ./partials/bash_update.yml
