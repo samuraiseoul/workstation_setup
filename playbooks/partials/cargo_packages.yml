@@ -16,3 +16,4 @@
   with_list:
     - exa
     - bat
+    - tldr
